@@ -1,0 +1,31 @@
+{
+  "name": "cypresspageobjectmodel",
+  "version": "1.0.0",
+  "description": "Page Object Model with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "cy:update-snapshots": "cypress run --env updateSnapshots=true",
+    "cy:dashboard" : "cypress run --record --key 5e8e8893-573d-429a-afea-7bf7f5ff89da"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuocBaoNguyen11295/CypressPageObjectModel.git"
+  },
+  "keywords": [
+    "POM",
+    "Cypress"
+  ],
+  "author": "Quoc Bao Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuocBaoNguyen11295/CypressPageObjectModel/issues"
+  },
+  "homepage": "https://github.com/QuocBaoNguyen11295/CypressPageObjectModel#readme",
+  "dependencies": {
+    "cypress": "^6.9.1",
+    "cypress-image-snapshot": "^4.0.1",
+    "prettier": "^2.7.1"
+  }
+}
