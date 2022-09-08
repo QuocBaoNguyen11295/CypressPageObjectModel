@@ -7,7 +7,7 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "cy:update-snapshots": "cypress run --env updateSnapshots=true",
-    "cy:dashboard" : "cypress run --record --key 5e8e8893-573d-429a-afea-7bf7f5ff89da"
+    "cy:dashboard": "cypress run --record --key 5e8e8893-573d-429a-afea-7bf7f5ff89da"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
     "cypress": "^6.9.1",
     "cypress-image-snapshot": "^4.0.1",
     "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "@types/cypress-image-snapshot": "^3.1.6"
   }
 }
