@@ -26,6 +26,7 @@
   "dependencies": {
     "cypress": "^6.9.1",
     "cypress-image-snapshot": "^4.0.1",
+    "cypress-xpath": "^2.0.1",
     "prettier": "^2.7.1"
   },
   "devDependencies": {

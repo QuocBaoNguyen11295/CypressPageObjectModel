@@ -1,4 +1,5 @@
 import BasePage from "../BasePage"
+import Navbar from "../components/Navbar"
 
 export default class LoginPage extends BasePage{
     static login(username,password){
@@ -14,6 +15,14 @@ export default class LoginPage extends BasePage{
     }
 
     static showLoginSuccessfully(){
-        cy.contains('Cash Accounts')
+        cy.xpath('//h2[1]').should('have.text','Cash Accounts')
+    }
+    
+    static clickLogout(){
+        Navbar.clickLogout()
+    }
+
+    static showLogoutSuccessfully(){
+        cy.xpath('//div[@id="carousel"]/div/div[1]/div/h4').should('have.text','Online Banking')
     }
 }

@@ -34,4 +34,16 @@ describe('Login Success Tests',()=>{
     it('should verify logging successfully',()=>{
         LoginPage.showLoginSuccessfully()
     })
+    
+    it('should logout from the application',()=>{
+        LoginPage.clickLogout()
+    })
+    
+    it('should logout successfully',()=>{
+        LoginPage.showLogoutSuccessfully()
+    })
+    after(()=>{
+        cy.clearCookies()
+        cy.clearLocalStorage()
+    })
 })
