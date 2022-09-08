@@ -15,9 +15,9 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-import { addMatchImageSnapshotPlugin } from 'cypress-image-snapshot/plugin'
-// eslint-disable-next-line no-unused-vars
-export default (on, config) => {
+const { addMatchImageSnapshotPlugin } = require('cypress-image-snapshot/plugin')
+ // eslint-disable-next-line no-unused-vars
+module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
   addMatchImageSnapshotPlugin(on,config)
